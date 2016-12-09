@@ -1,0 +1,28 @@
+{
+  "name": "generate-weapp-init",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuowenli/generate-weapp-init.git"
+  },
+  "keywords": [
+    "wechat",
+    "weapp",
+    "wxapp"
+  ],
+  "author": "卓文理 <531840344@qq.com> (http://www.zhuowenli.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhuowenli/generate-weapp-init/issues"
+  },
+  "homepage": "https://github.com/zhuowenli/generate-weapp-init#readme",
+  "dependencies": {
+    "fs-extra": "^1.0.0",
+    "mkdirp": "^0.5.1"
+  }
+}
