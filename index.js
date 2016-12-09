@@ -19,9 +19,10 @@ const generate = (options) => {
 
     if (!options.root) throw new Error('You must specify a root directory.');
 
-    const modulePage = path.resolve(options.root, '..', options.name);
+    const modulePage = path.resolve(options.root, options.name);
     const tempPath = path.resolve(__dirname, 'template/src');
 
+    console.log(modulePage);
     if (fs.existsSync(modulePage)) throw new Error(`Directory '${options.name}' is already exists.`);
 
     mkdirp.sync(modulePage);

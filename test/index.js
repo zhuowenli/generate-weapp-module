@@ -5,10 +5,11 @@
  */
 'use strict';
 
+const path = require('path');
 const generate = require('../');
 
 const res = generate({
-    root: __dirname,
+    root: path.resolve(__dirname, '..'),
     name: 'demo'
 });
 
