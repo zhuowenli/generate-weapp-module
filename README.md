@@ -1,17 +1,17 @@
-# generate-weapp-init
+# generate-weapp-module
 
-> Auto generate wechat weapp menus
+> Auto generate wechat weapp modules
 
 ## Install
 
 ```bash
-$ npm install generate-weapp-init --save
+$ npm install generate-weapp-module --save
 ```
 
 ## Useage
 
 ```js
-const generate = require('generate-weapp-init');
+const generate = require('generate-weapp-module');
 
 const res = generate({
     root: __dirname,
