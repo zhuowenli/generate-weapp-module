@@ -5,7 +5,7 @@
  */
 'use strict';
 
-const generate = require('../')
+const generate = require('../');
 
 const res = generate({
     root: __dirname,
