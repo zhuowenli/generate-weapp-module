@@ -19,20 +19,20 @@ const generate = (options) => {
 
     if (!options.root) throw new Error('You must specify a root directory.');
 
-    const pageRoot = path.resolve(options.root, '..', options.name);
+    const modulePage = path.resolve(options.root, '..', options.name);
+    const tempPath = path.resolve(__dirname, 'template/src');
 
-    if (fs.existsSync(pageRoot)) throw new Error(`Directory '${options.name}' is already exists.`);
+    if (fs.existsSync(modulePage)) throw new Error(`Directory '${options.name}' is already exists.`);
 
-    mkdirp.sync(pageRoot);
+    mkdirp.sync(modulePage);
 
     try {
-        fs.copySync('./template/src', pageRoot);
-        console.log("generate success!");
+        fs.copySync(tempPath, modulePage);
     } catch (err) {
-        console.error(err);
+        throw new Error(err);
     }
 
-    return pageRoot;
+    return modulePage;
 };
 
 module.exports = generate;
